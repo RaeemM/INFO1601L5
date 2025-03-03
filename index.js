@@ -31,3 +31,8 @@ console.log("false" == true); // "false" is not true either
 
 if("false")
    console.log("Hello false!") //but "false" is true enough here
+
+/*Task 4.2*/
+console.log('1' === 1); //false
+console.log(1 === true); //false
+console.log("true" === true); //false
