@@ -69,3 +69,12 @@ function happyPrint(string){
  
  add(5, 10, happyPrint);
  add(11, 12, sadPrint);
+
+ /*Task 2 (7. Set Interval & Timeout)*/
+ //Note made changes instructed in lab.
+  //prints current date
+function printDate(){
+  console.log(new Date().toLocaleTimeString());
+}
+     
+setInterval(printDate, 1000);
