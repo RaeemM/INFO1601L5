@@ -105,3 +105,30 @@ console.log(firstItem, arr);//22, [-5, 16, 33, 42, 103, 344]
 let reversed = arr.reverse();//creates a new array in reverse order 
 console.log(reversed);//[344, 103, 42, 33, 16, -5]
 console.log(arr.join('-'));//"-5-103-16-33-344-42" joins array with provided separator
+
+/*Task 6*/
+function createPerson(name, height, weight) {
+  return { name: name, height: height, weight: weight };
+}
+
+function BMI(weight, height){
+  return weight/(height * height);
+}
+
+function BMI_avg(people){
+  let total = 0;
+  
+  for (let person of people) {
+    total += BMI(person.weight, person.height);
+  }
+
+  return total/people.length;
+}
+
+let people = [
+  createPerson("Sally", 60, 2.5),
+  createPerson("Ben", 81, 3),
+  createPerson("Shelly", 50, 1.7)
+];
+
+console.log(BMI_avg(people));
