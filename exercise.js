@@ -95,7 +95,7 @@ let bob = {
     return avg;
   }
 
-  /*Tests*/
+  /*
 
   console.log(getAverateGrade(paul, "INFO 1600"));
   console.log(getAverateGrade(paul, "INFA 1600"));
@@ -104,3 +104,5 @@ let bob = {
   console.log(getAssignmentMark(sally, "INFO 1609", 1));
 
   console.log(averageAssessment(students, "INFO 1601", 1));
+
+  */
