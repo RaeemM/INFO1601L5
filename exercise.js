@@ -61,6 +61,25 @@ let bob = {
     return -1;
   }
 
+  function getAssignmentMark(student, course, num){
+    
+    /*It wasn't specified what assigment number meant 
+    so I assumed it's the order of the course in 
+    the grades array.*/
+    
+    for (let tran of student.transcript){
+        if (tran.course === course){
+            return tran.grades[num - 1];
+        }
+    }
+
+    return -1;
+  }
+
   /*Tests*/
 
   console.log(getAverateGrade(paul, "INFO 1600"));
+  console.log(getAverateGrade(paul, "INFA 1600"));
+
+  console.log(getAssignmentMark(sally, "INFO 1601", 1));
+  console.log(getAssignmentMark(sally, "INFO 1609", 1));
