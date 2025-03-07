@@ -132,3 +132,5 @@ let people = [
 ];
 
 console.log(BMI_avg(people));
+
+//EXERCISE DONE IN exercise.js
